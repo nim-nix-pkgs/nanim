@@ -11,6 +11,7 @@
   inputs.src-nanim-main.ref   = "refs/heads/main";
   inputs.src-nanim-main.owner = "ErikWDev";
   inputs.src-nanim-main.repo  = "nanim";
+  inputs.src-nanim-main.dir   = "";
   inputs.src-nanim-main.type  = "github";
   
   inputs."staticglfw".owner = "nim-nix-pkgs";
