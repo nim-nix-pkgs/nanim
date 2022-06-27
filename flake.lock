@@ -24,20 +24,22 @@
     "glm": {
       "inputs": {
         "flakeNimbleLib": [
+          "nanim-main",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "nanim-main",
           "nixpkgs"
         ],
         "src-glm-v1_1_1": "src-glm-v1_1_1"
       },
       "locked": {
         "dir": "v1_1_1",
-        "lastModified": 1656300924,
-        "narHash": "sha256-2QyHMR1R15v/a0XK332jdcLKkZaBBR6YbQfUNc2qO3c=",
+        "lastModified": 1650750278,
+        "narHash": "sha256-UpIGTb4Yu1DhBuo3njyeYsa3g0AOFQ/iDE75qGB/X38=",
         "owner": "nim-nix-pkgs",
         "repo": "glm",
-        "rev": "655e490c1d66da3ef0cd0326fc0790ca52a4f62b",
+        "rev": "63dd34bcb5d758f6880fccfb75425257c944089d",
         "type": "github"
       },
       "original": {
@@ -48,12 +50,46 @@
         "type": "github"
       }
     },
-    "nanovg": {
+    "nanim-main": {
       "inputs": {
         "flakeNimbleLib": [
           "flakeNimbleLib"
         ],
+        "glm": "glm",
+        "nanovg": "nanovg",
         "nixpkgs": [
+          "nixpkgs"
+        ],
+        "rainbow": "rainbow",
+        "src-nanim-main": "src-nanim-main",
+        "staticglfw": "staticglfw",
+        "stb_image": "stb_image"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1656283828,
+        "narHash": "sha256-WZgyBCjf/IgZ2BrBWO97oRzOvp2CdEqJE8gK3UjiejA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nanim",
+        "rev": "469efa133ab2b2fbaafbc4f68172d1a9ad930fed",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nanim",
+        "type": "github"
+      }
+    },
+    "nanovg": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "nanim-main",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nanim-main",
           "nixpkgs"
         ],
         "src-nanovg-v0_3_4": "src-nanovg-v0_3_4"
@@ -90,10 +126,12 @@
     "opengl": {
       "inputs": {
         "flakeNimbleLib": [
+          "nanim-main",
           "staticglfw",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "nanim-main",
           "staticglfw",
           "nixpkgs"
         ],
@@ -120,20 +158,22 @@
     "rainbow": {
       "inputs": {
         "flakeNimbleLib": [
+          "nanim-main",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "nanim-main",
           "nixpkgs"
         ],
         "src-rainbow-v0_2_3": "src-rainbow-v0_2_3"
       },
       "locked": {
         "dir": "v0_2_3",
-        "lastModified": 1656301193,
-        "narHash": "sha256-Wi5vmMLfKrMxrnTdwQlY39V72Mb3/XyfvhzHIPZpwe4=",
+        "lastModified": 1650750543,
+        "narHash": "sha256-P7mbCJiTi3IGzvQXyvv0Qley5rI9oy7cQOyeuOOSloU=",
         "owner": "nim-nix-pkgs",
         "repo": "rainbow",
-        "rev": "c4e004eac552dc64e0e96c27b2e79223c36fd364",
+        "rev": "dbc09a6fb56b80e6323885fc8d5f86ac45b95ea0",
         "type": "github"
       },
       "original": {
@@ -147,13 +187,8 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
-        "glm": "glm",
-        "nanovg": "nanovg",
-        "nixpkgs": "nixpkgs",
-        "rainbow": "rainbow",
-        "src-nanim-main": "src-nanim-main",
-        "staticglfw": "staticglfw",
-        "stb_image": "stb_image"
+        "nanim-main": "nanim-main",
+        "nixpkgs": "nixpkgs"
       }
     },
     "src-glm-v1_1_1": {
@@ -295,9 +330,11 @@
     "staticglfw": {
       "inputs": {
         "flakeNimbleLib": [
+          "nanim-main",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "nanim-main",
           "nixpkgs"
         ],
         "opengl": "opengl",
@@ -305,11 +342,11 @@
       },
       "locked": {
         "dir": "4_1_3",
-        "lastModified": 1656302109,
-        "narHash": "sha256-rmDqtsJ9R/OJQ2P0jjuVZtDRmhGBYHvBYCX7ay+ONHc=",
+        "lastModified": 1650756128,
+        "narHash": "sha256-DlHgoUI5xW1uiIYhN1fLrC7iGfcnJwyhCAcqH7qAyxI=",
         "owner": "nim-nix-pkgs",
         "repo": "staticglfw",
-        "rev": "7ec81750001ad457d15ba800332c59bfebd6d25d",
+        "rev": "a0f59457b132a189c5326a8e6e65fe261dbc7fa1",
         "type": "github"
       },
       "original": {
@@ -323,20 +360,22 @@
     "stb_image": {
       "inputs": {
         "flakeNimbleLib": [
+          "nanim-main",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "nanim-main",
           "nixpkgs"
         ],
         "src-stb_image-2_5": "src-stb_image-2_5"
       },
       "locked": {
         "dir": "2_5",
-        "lastModified": 1656301273,
-        "narHash": "sha256-B19pNMkmenTNBtbmwL6L22gxNIpyV9WeLx7ewv0ShwI=",
+        "lastModified": 1650750609,
+        "narHash": "sha256-4ajfd8NX4C7HIYLzFMEbw6X94vXPoEAvMKoYlv08U24=",
         "owner": "nim-nix-pkgs",
         "repo": "stb_image",
-        "rev": "b34a28617000fc43574ab9bc5936f380cdd835e6",
+        "rev": "a17b23c171a4211612d41e21e53d1c902df92574",
         "type": "github"
       },
       "original": {
@@ -350,11 +389,13 @@
     "x11": {
       "inputs": {
         "flakeNimbleLib": [
+          "nanim-main",
           "staticglfw",
           "opengl",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "nanim-main",
           "staticglfw",
           "opengl",
           "nixpkgs"
